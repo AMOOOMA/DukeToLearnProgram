@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=input\ key1\ key2
+comment0.target=java.lang.String\ CC(java.lang.String,\ int,\ int)
+comment1.params=an
+comment1.target=int\ check(java.lang.String)
+comment2.params=
+comment2.target=void\ teston()
+comment3.params=
+comment3.target=void\ test()
+numComments=4
