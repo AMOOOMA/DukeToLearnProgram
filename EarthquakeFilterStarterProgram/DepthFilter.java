@@ -1,0 +1,26 @@
+import java.util.*;
+/**
+ * Write a description of DepthFilter here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class DepthFilter implements Filter{
+    private double minDepth;
+    private double maxDepth;
+    public DepthFilter(double min, double max){
+        minDepth = min;
+        maxDepth = max;
+    }
+    public boolean satisfies(QuakeEntry quake){
+        double depth = quake.getDepth();
+        if(depth<=maxDepth&&minDepth<=depth){
+            return true;
+        }
+        return false;
+    }
+    public String getName(){
+        String answer = "DepthFilter";
+        return answer;
+    }
+}
